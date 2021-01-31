@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Snake Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/snakeFav.png" />
+    <script
+      src="https://kit.fontawesome.com/a455e9d3da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="instructions">
+      <div id="instruction_steps">
+        <h1>THE SNAKE GAME</h1>
+
+        <div>
+          <h3 class="inst_heading">Instructions</h3>
+          <h3>1. This is the popular SNAKE GAME!</h3>
+          <h3>
+            2. The Snake is always hungry and the food is right before its eyes.
+          </h3>
+          <h3>
+            3. Help the snake by controlling its movements so that it can eat
+            the food and grow.
+          </h3>
+          <h3>
+            4. Use
+            <i class="fas fa-arrow-up"></i>
+            <i class="fas fa-arrow-down"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-right"></i>
+            to control its movements. If the snake hits the wall, the game ends.
+          </h3>
+          <h3>5. Set the difficulty on the top right.</h3>
+          <h3>6. Start the Game. Enjoy!!!</h3>
+          <h3>
+            7. Note! Increasing the difficulty increases the snake's speed!
+          </h3>
+          <h3>8. Reload the page to restart the game.</h3>
+        </div>
+
+        <h2>Got it!</h2>
+      </div>
+    </div>
+
+    <div class="show_game" id="game_container">
+      <div id="heading">
+        <h1>THE SNAKE GAME</h1>
+      </div>
+
+      <div id="score_board">
+        <h3>SCORE</h3>
+        <h1 id="display_score">0</h1>
+      </div>
+
+      <div id="game_level">
+        <h2>Difficulty</h2>
+        <div id="set_level">
+          <h2 class="change_level minus">-</h2>
+          <h2 id="display_level">0</h2>
+          <h2 class="change_level plus">+</h2>
+        </div>
+        <div id="game_start">
+          <h1>START</h1>
+        </div>
+      </div>
+
+      <div id="canvas_parent">
+        <canvas id="my_canvas"></canvas>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
